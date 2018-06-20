@@ -82,6 +82,14 @@ public class Copa {
 		}
 
 	}
+	public void listarSelecoesGrupo() throws FileNotFoundException, ClassNotFoundException, IOException {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o grupo: ");
+		char g = sc.next().charAt(0);
+		listarSelecoesGrupo(g);
+		
+
+	}
 
 	public static void main(String[] args) throws ClassNotFoundException, IOException {
 
@@ -102,7 +110,7 @@ public class Copa {
 				copa2018.listarSelecoes();
 				break;
 			case 3:
-				copa2018.selecionarGrupo();
+				copa2018.listarSelecoesGrupo();
 				break;
 			case 4:
 				break;
